@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "numerical-neural-surrogate"
+version = "0.1.0"
+description = "Poisson FD solver, neural surrogate, and symbolic distillation on the unit disk"
+requires-python = ">=3.10"
+authors = [
+    {name = "Hugo Robijns", email = "hugojfrobijns@gmail.com"}
+]
+dependencies = [
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "torch>=2.0",
+    "pysr>=0.18",
+    "symtorch @ git+https://github.com/astroautomata/SymTorch.git",
+    "jupyter>=1.0",
+    "ipykernel>=6.0",
+]
